@@ -1,4 +1,4 @@
-# Kaggle TGS Salt Identification Challenge 34nd Solution (34/3291)
+# Kaggle TGS Salt Identification Challenge 34th Solution (34/3291)
 
 # 1. Overall Solution (Worked for me)
 ## 1.1 Encoder
