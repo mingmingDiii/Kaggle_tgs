@@ -1,6 +1,6 @@
 # Kaggle TGS Salt Identification Challenge 32nd Solution (32/3234)
 
-# 1. Overall Solution (Worked for me)
+# 1. Overall Solution
 ## 1.1 Encoder
 I have tried a lot of backbone, such as resnet34, senet, se-resnet, etc. But only Densenet and DPN worked for me.
 I used three encoders in my final models:
@@ -8,18 +8,18 @@ I used three encoders in my final models:
 * densenet with dilation
 * normal DPN
 
-(More details can be found in the main_code_torch/models)
+(More details can be found in the main_code_torch/models,
+all models I have tried can be found in models/deprecated_models)
 ## 1.2 Decoder
 * Unet style structure with hypercolumn (Heng's solution)
 * linknet style sturcture without hypercolumn
 * ModifiedSCSEBlock (the original scse block did not work for me)
 ## 1.3 Training
-* adam (SGD did not work for me )
+* adam
 * (0.5) decay learning rate if the validation miou did not improve for 15 epoches
 * Training 40 more epoches after got the highest miou on validation dataset.
 * 10 folds for each model
 * 5 cycle learning for each fold
-* Heng's data sugmentation
 * deep supervision
 * lovasz loss
 ## 1.4 Pseudo label
