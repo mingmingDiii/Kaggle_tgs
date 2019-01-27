@@ -41,3 +41,5 @@ Modified some masks if they adjoin with vertical masks in the jigsaw.(just copy 
 * main_code_torch/ml_eval.py  : offline validation
 * main_code_torch/ml_test.py  : online testing and make submission
 * main_code_torch/models      : all models I used in my final submission
+
+## [My kaggle profile](https://www.kaggle.com/mingmingdiii)
